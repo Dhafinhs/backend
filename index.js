@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 // Tambahkan middleware keamanan
 app.use(helmet()); // ← ini dia!
 app.use(cors({
-  origin: "*",
+  origin: 'https://frontend-cs-9.vercel.app',
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
